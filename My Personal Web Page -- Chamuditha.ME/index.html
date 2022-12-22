@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Personal Website Chamuditha.ME</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8e1736b6e3.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>UI / UX Designer</p>
+            <h1>Hi, I'm <span>Chamuditha</span> Kalhara<br> From Sri Lanka</h1>
+
+        </div>
+    </div>
+
+
+</div>
+<!-------------about------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/WhatsApp Image 2022-12-22 at 11.59.48 AM.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto dicta et, voluptatem aspernatur labore aperiam, vero unde delectus nemo earum error! Fugit repellendus doloremque esse ex impedit iure dolor consequuntur!. <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus maxime id voluptate quaerat, doloribus illo et! Possimus, voluptatibus molestiae. Vero soluta adipisci alias provident. Non aperiam suscipit ratione aut veniam.</p>
+
+                <div class="tab-titles">
+
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Disigning Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Buildings Android/iOS Apps</li>
+                    </ul>
+                </div>
+
+                <!---Experience--->
+
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>2021 - Current</span><br>UI/UX Design Training at ET institute</li>
+                        <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                        <li><span>2017 - 2019</span><br>UL/UX Design Executive at Coin Digital Ltd.</li>
+                        <li><span>2016 - 2017</span><br>Internship at Vix eCommerce.</li>
+                    </ul>
+                </div>
+
+                <!---Education--->
+
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2016</span><br>UI/UX Design Training at ET institute</li>
+                        <li><span>2015</span><br>BSc in Software Eng at Esoft Metro Campus</li>
+                        <li><span>2014</span><br>BBA from ISBM Institute</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------services---------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>This website design will be completely responsive for all screen devices like mobile phones. We will this complete website design step by step using HTML CSS and JavaScript.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>This website design will be completely responsive for all screen devices like mobile phones. We will this complete website design step by step using HTML CSS and JavaScript.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>This website design will be completely responsive for all screen devices like mobile phones. We will this complete website design step by step using HTML CSS and JavaScript.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!---------------------portfolio----------------->
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+</body>
+</html>
